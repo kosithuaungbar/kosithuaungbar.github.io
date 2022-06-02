@@ -523,8 +523,8 @@ textarea[name="message"]:focus{
 }
 .about_img:hover{
     cursor: pointer;
-    box-sizing: border-box;
-    box-shadow: #e5cdb1 2.5px 2.5px 2.5px 4px;
+    /* box-sizing: border-box; */
+    /* box-shadow: #e5cdb1 2.5px 2.5px 2.5px 4px; */
 }
 .about_title{
     font-family: great vibes;
@@ -535,6 +535,12 @@ textarea[name="message"]:focus{
     font-weight: lighter;
     color: #955993;
 }
+.about_title:hover{
+    cursor: pointer;
+    /* box-sizing: border-box; */
+    /* box-shadow: #e5cdb1 2.5px 2.5px 2.5px 4px; */
+}
+
 .about_we{
     font-family: great vibes;
     margin-top: 50px;
