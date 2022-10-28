@@ -9,9 +9,11 @@ h1{
 
 /* Universal Selector  */
 
-/* *{ */
+*{
     /* color: green; */
-/* } */
+    margin: 0px;
+    padding: 0px;
+}
 
 /* tag / element selecotr  */
 
@@ -70,4 +72,165 @@ a[title="google"] {
 /* Target  */
 :target {
     border: 1px solid red;
+}
+
+/* Border  */
+.borderone{
+    border: 2px solid black;
+}
+
+.bordertwo{
+    border-left: 10px solid red;
+    border-top: 10px dotted black;
+    border-right: 10px dashed blue;
+    border-bottom: 10px groove violet;
+}
+
+.borderstyleone{
+    border-style: double;
+    border-color: pink;
+}
+
+.bordermix{
+    /* border-style: solid; */
+    /* All Four */
+    /* border-style: dashed double; */
+    /* T&B / L&R */
+    /* border-style: dotted solid dashed; */
+    /* Top / L&R / Bottom  */
+    border-style: dashed solid double dotted;
+    /* T / R / B / L  */
+
+}
+
+
+.borderwidth{
+    border-style: inset;
+    border-width:thick thick thin;
+}
+
+/* Margin  */
+.marginone{
+    border: 1px solid green;
+    margin: 50px 100px;
+}
+
+.margintwo{
+    border: 1px solid red;
+    margin-top: -30px ;
+    margin-left: 50px;
+}
+
+.paddingone{
+    border: 1px solid green;
+    padding-top: 50px;
+}
+
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    display: inline-block;
+}
+
+.block{
+    border: 1px solid black;
+    width: 400px;
+    display: inline-block;
+}
+
+/* Float  */
+.float_left img{
+    width: 40%;
+    float: left;
+    border-radius: 4px;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+    border-radius: 5px;
+}
+
+/* Grid  */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gridone,.gridtwo,.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: 400px 600px auto;
+}
+
+.gridtwo{
+    /* grid-column-gap: 40px;
+    grid-row-gap: 40px; */
+    grid-gap: 40px;
+}
+
+.columnadd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.rowadd{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 400px;
+}
+
+.relative{
+    border: 1px solid rgb(23, 23, 15);
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 120px;
+    left: 300px;
+}
+
+.absolute_parent{
+    border: 1px solid green;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.absolute{
+    border: 1px solid yellow;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed{
+    top: 25px;
+    right: 100px;
+    position: fixed;
+}
+
+/* Font  */
+
+.online{
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+@font-face{
+    src: url(Comforter_Brush/ComforterBrush-Regular.ttf);
+    font-family:comforter;
+}
+
+.offline{
+    font-family:comforter ;
 }

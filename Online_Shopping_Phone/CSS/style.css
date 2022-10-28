@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Nav Bar  */
+.nav_bar{
+    height: 90px;
+    box-shadow: 5px 5px 20px rgb(68, 143, 167, .3);
+}
+
+.nav_bar div{
+    display: inline-block;
+}
+
+.nav_bar ul{
+    display: inline-block;
+    float: right;
+}
+
+.nav_bar ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.nav_bar ul li a{
+    /* margin-top: 30px;
+    margin-right: 0px; */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.brand_name{
+    margin-top: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    color: #70bfc4;
+    font-weight: bold;
+}
+
+.nav_item:hover{
+    color: #70bfc4;
+}
+
+/* NOTIFICATIONS SHOPPING  */
+.noti{
+    position: relative;
+    top: -12px;
+    background-color: black;
+    color: white;
+    padding: 0px 7px;
+    border-radius: 50%;
+    left: -7px;
+}
+
+/* First Image  */
+.first_image{
+    width: 100%;
+    height: 450px;
+}
+
+.first_text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.first_text h1{
+    margin-bottom: 10px;
+}
+
+.shop_now{
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+}
+
+.shop_now:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+/* End First Image  */
+
+/* Categories  */
+.header_category{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.category{
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.category:hover{
+    background-color: #70bfc4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.category_tag{
+    width: 50%;
+    margin: auto;
+}
+/* New Arrival Header  */
+.new_arrival_header{
+    border-left: 4px solid #70bfc4;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding-left: 35px;
+}
+
+/* New Arrival Products  */
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    grid-row-gap: 50px;
+}
+.new_arrival_icon{
+    padding-right: 10px;
+}
+/* .new_arrival div a img{
+    width: 100%;
+    height: 200px;
+} */
+
+/* B Log  */
+/* Start B LOG Images  */
+.blog{
+    display: grid;
+    grid-template-columns: 424px 424px 424px;
+    margin-left: 100px;
+    margin-right: 70px;
+    padding-top: 40px;
+    grid-column-gap: 30px;
+}
+
+.blog_image{
+    width: 425px;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: .4s;
+}
+.blog_date{
+    color: #70bfc4;
+    padding-left: 20px ;
+    padding-right: 20px;
+}
+
+.blog_text{
+    text-align: justify;
+    padding-left: 20px ;
+    padding-right: 20px;
+}
+.read_more{
+    color: #70bfc4;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 20px ;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.blog div{
+    box-shadow: -3px 4px 10px rgb(77, 76, 76 , .2);
+
+}
+
+.blog_image:hover{
+    transform:scale(1.2);
+}
+
+.blog_image_zoom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.blog_image_zoom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* Avaliable Products  */
+.avaliable_image{
+    background-image: url(../Images/iphone13pro.png);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.avaliable_image:hover{
+    background-image: url(../Images/iphone13.png);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-repeat:no-repeat ;
+}
+
+.avaliable_image1{
+    background-image: url(../Images/iphone13.png);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.avaliable_image1:hover{
+    background-image: url(../Images/iphone13pro.png);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-repeat:no-repeat ;
+}
+
+/* More Items */
+.more_item{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.more_item a{
+    color: #70bfc4;
+}
+
+/* Support  */
+.support div p{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(219, 225, 231);
+}
+
+.support div p b{
+    font-size: 24px;
+}
+
+/* Footer  */
+.footer{
+    background-color: black;
+    padding-top: 50px;
+}
+
+.footer_nav{
+    color: gray;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.designed_by{
+    color: gray;
+    margin-top: 20px;
+}
+
+.footer_icon{
+    color: gray;
+    display: inline-block;
+    margin: 20px 10px 50px;
+}
