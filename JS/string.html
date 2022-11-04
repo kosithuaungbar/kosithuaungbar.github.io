@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>String</h1>
+    <script>
+        let firstName = "Developer";
+        let lastName = "Si Bar";
+
+        console.log(firstName.length);
+        console.log("PHP" + firstName);
+        console.log(firstName.concat('', lastName));
+
+        console.log("My name is ${lastName}" + "I am 27 Years Old");
+        console.log("My name is" +  lastName + "I am 27 Years Old");
+        console.log(`My name is ${lastName} I am 27 Years Old`);
+
+        console.log(firstName[2]);
+        console.log(firstName.toLowerCase());
+        console.log(firstName.toUpperCase());
+
+        //Important cut string first Start point Second End count
+        console.log(firstName.substr(2,2)); //start , length
+
+        let myJob = "    Web         Developer    ";
+        console.log(myJob);
+        console.log(myJob.trim());
+
+        let search = "Javascript is Everything Obj";
+
+        console.log(search.search('is'));
+
+        let replace = "I live in Yangon";
+        console.log(replace.replace('Yangon','Mandalay'));
+
+        console.log("I love \ Javascript");
+        console.log('I\'m Javascript');
+
+
+
+        
+        
+    </script>
+</body>
+</html>

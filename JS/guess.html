@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <script>
+        let secrectNum = 7;
+        let userNumber = prompt("Enter Number Between 1 to 10");
+        
+
+        while (secrectNum != userNumber) {
+            if (secrectNum > userNumber) {
+            alert("Your Number is Greater than Secrect Number , Try Again");
+
+            }else{
+                alert("Your Number is Less than Secrect Number , Try Again");
+            }
+            userNumber = prompt("Enter Number Between 1 to 10  ");
+            
+        }
+
+        alert("Correct")
+    </script>
+</body>
+</html>
