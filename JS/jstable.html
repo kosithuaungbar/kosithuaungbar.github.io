@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JS Table</h1>
+    <table border="1" cellpadding="10" >
+       <tbody id="myData">
+
+       </tbody>
+
+    </table>
+    <button onclick="show()">Show Data</button>
+
+    <script>
+        function show() {
+            //alert("Okey");
+            let html = '';
+            html = html + '<tr>';
+            for (let i = 1; i <= 10; i++ ){
+                html = html + `<td>${i} </td>`
+                //html += html+
+            }
+            html = html +  `</tr>`;
+            document.getElementById('myData').innerHTML = html;
+
+        }
+
+        function showData() {
+            let html = '';
+            //let number = 1;
+            for (let j = 1; j <= 10 ; j++) { // outer loop tr
+                html = html + `<tr>`;
+                    for (let k = 1 ; k <= 10 ; k++){
+                        // inner loop td
+                        html = html + `<td>${j * k}</td>`;
+                        //html = html + `<td>${number++} </td>`;
+                    }
+
+                html = html + `<tr>`;
+
+            }
+            document.getElementById('myData').innerHTML = html;
+        }
+    </script>
+</body>
+</html>

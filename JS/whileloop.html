@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>While Loop</h1>
+    <script>
+        // While Loop  // Loop Count အတိ အကျ မသိ တဲ့ အခါ သုံး
+        // initialize
+        // condition true => Code Run
+        // Update
+        
+        // while (condition) {
+           // Run always condition is true
+        // }
+        let num = 100 ; 
+        while(num > 20) {
+            document.write(`<h3> This num is ${num}</h3>`);
+                num -= 4;
+                // num = num - 4
+        }
+
+        let number = 1 ; 
+        while (number <= 12) {
+            document.write(`<h3> 2 x ${number} = ${2 * number} </h3>`)
+            number++;
+        }
+
+        // Do While Loop
+        // do {
+
+        // }while (condition);
+
+        let result = 10;
+        do {
+            document.write(`<h3>This result is ${result} </h3>`);
+            result ++;
+        } while (result < 15);
+    </script>
+</body>
+</html>
