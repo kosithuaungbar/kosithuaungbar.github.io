@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Date</h1>
+
+    <p id = "date" style="background-color: brown; padding: 30px";></p>
+    <script>
+        let todayDate = new Date();
+        console.log(todayDate);
+
+        let fullYear = todayDate.getFullYear();
+        console.log(fullYear);
+
+        let fullMonth = todayDate.getMonth();
+        console.log(fullMonth);
+
+        let fullDay = todayDate.getday();
+        console.log(fullDay);
+
+        let getHours = todayDate.getHours();
+        console.log(getHours);
+
+        let getMinutes = todayDate.getMinutes();
+        console.log(getMinutes);
+
+        let getSeconds = todayDate.getSeconds();
+        console.log(getSeconds);
+
+        let timeFormat = todayDate.toLocaleDateString();
+        console.log(timeFormat);
+
+        function timeInterval() {
+            let session = "AM";
+            let date = new Date ();
+            let seconds = date.getSeconds();
+            // document.getElementById('time').innerHTML = seconds;
+            let minutes = date.getMinutes();
+            // document.getElementById('minute').innerHTML = minutes;
+            let hours = date.getHours();
+            if (hours == 0) {
+                hours = 12;
+            }
+
+            if (hours>12) {
+                hours = hours - 12;
+                session = "PM";
+            }
+
+            let digital= hours + " : " + minutes + " : " + seconds + " " + session;
+            document.getElementById('time').innerHTML = digital;
+
+        
+        }
+
+        setInterval(timeInterval,1000);
+    </script>
+</body>
+</html>

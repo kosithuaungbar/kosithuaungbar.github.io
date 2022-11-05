@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Array</h1>
+
+    <script>
+        //Array
+        let studentList = ['Kyaw Kyaw','Zaw Zaw','Aung Aung'];
+        console.log(studentList);
+
+        studentList.push('Ba Si');
+        console.log(studentList);
+
+        studentList.unshift('Pyae Pyae');
+        console.log(studentList);
+
+        studentList.pop();
+        console.log(studentList);
+
+        studentList.shift();
+        console.log(studentList);
+
+        studentList.sort();
+        console.log(studentList);
+
+        studentList.reverse();
+        console.log(studentList);
+
+        //Let Array to String
+        let studentListStr = studentList.toString();
+        console.log(studentListStr);
+
+        let studentListArray = studentListStr.split(',');
+        console.log(studentListArray);
+
+        let studentList2 = ['Ma Ma','Hla Hla'];
+        let studentList3 = ['Mya Mya','Phway Phway'];
+        let result = studentList.concat(studentList2);
+        console.log(result);
+
+        let multiArray = [...studentList,...studentList2,...studentList3];
+        console.log(multiArray);
+
+        let arrayConcat = result.concat(studentList3);
+        console.log(arrayConcat);
+
+        //Object
+        //roll,name,email,major,phone,address,age 
+        let student1 = {
+            roll : '1',
+            name : 'Saw Nan Nge',
+            email : 'sawnannge125@gmail.com',
+            major : 'E Major',
+            phone : 09950505869,
+            age : 20,
+            Address : 'Nan Htaw' 
+        }
+
+        let student2 = {
+            roll : '2',
+            name : 'Saw Nan ',
+            email : 'sawnan125@gmail.com',
+            major : 'E Major',
+            phone : 09950505879,
+            age : 20,
+            Address : 'Nan Htawe'
+        }
+
+        let student3 = {
+            roll : '3',
+            name : 'Saw Nan Nge ',
+            email : 'sawnannge125@gmail.com',
+            major : 'E Major',
+            phone : 09950565879,
+            age : 20,
+            Address : 'Nan Htawe'
+        }
+
+        let studentListArr = [student1,student2];
+        studentListArr.push(student3);
+        console.log(studentListArr);
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logical</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Logical Operators</h1>
     <script>
+        if (12 > 11 && 20 < 40) {
+            //code
+        }
+
+        //  && And Logical Operator
     // <!-- || OR Logical Operator  -->
     // <!-- ! Not Logical Operator  -->
         
@@ -20,11 +27,18 @@
 
     let no;
 
-    console.log(num1 < num2 && num3 > num4 && num5 < num6);
+    console.log(num1 < num2 && num4 > num3 && num5 < num6);
+    // true && true && true  All true = Passed
+    // true && false && true   One False = Failed
+
     console.log(num1 < num2 || num3 > num4 || num5 < num6);
+    // true || False || True = Passed
+    // If Only One True Include = Passed
+    // All False = False 
+
     console.log(!no);
 
-    if (num1 < num2 && num3 > num4 && num5 < num6) {
+    if (num1 < num2 && num4 > num3 && num5 < num6) {
         console.log("And Logical Operator");
     }
 

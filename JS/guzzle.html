@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guzzle</title>
+</head>
+<body>
+    <script>
+        let serectNum=7;
+        let count=0;
+        let userNumber=prompt("Put a number between 1 to 10");
+        while(serectNum!=userNumber)
+        {
+        if(serectNum<userNumber)
+        {
+            alert("Your Number is Higher than secrect Number, Try Again");
+            count++;
+        }
+        else if(serectNum>userNumber){
+            alert("Your Number is Lower than secrect Number, Try Again");
+            count++;
+        }
+        else{
+            alert("This is not a number,Put Only number !!, Try Again");
+            count++;
+        }
+        userNumber=prompt("Put a number between 1 and 10");
+    }
+    alert("Finally You Got  Correct Number, you try "+count+" times");
+
+    </script>
+</body>
+</html>
