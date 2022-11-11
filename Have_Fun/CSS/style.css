@@ -1,0 +1,701 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Nav Bar  */
+.nav_bar{
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    height: 90px;
+    box-shadow: 0px 5px 3px gray;
+    margin-bottom: 4px;
+}
+
+.nav_bar div{
+    display: inline-block;
+}
+
+.nav_bar ul{
+    display: inline-block;
+    float: right;
+}
+
+.nav_bar ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.nav_bar ul li a{
+    /* margin-top: 30px;
+    margin-right: 0px; */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #efefef;
+    font-weight: bold;
+}
+
+.brand_name{
+    margin-top: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    color: #efefef;
+    font-weight: bold;
+}
+
+.brand_name:hover{
+    color: pink;
+    cursor: pointer;
+}
+
+.nav_item:hover{
+    color: pink;
+}
+
+/* NOTIFICATIONS SHOPPING  */
+.noti{
+    position: relative;
+    top: -12px;
+    background-color: black;
+    color: white;
+    padding: 0px 7px;
+    border-radius: 50%;
+    left: -7px;
+}
+
+/* First Image  */
+.first_image{
+    width: 100%;
+    height: 450px;
+}
+
+.first_text{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+}
+
+.first_text h1{
+    margin-bottom: 13px;
+}
+
+.first_text  h3 {
+    margin-left:100px;
+    margin-bottom: 9px;
+}
+
+/* .shop_now{
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+}
+
+.shop_now:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+} */
+/* End First Image  */
+
+/* Categories  */
+.header_category{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.category{
+    width: 250px;
+    padding: 1px 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.category:hover{
+    background-color: pink;
+    color: black;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 4px gray;
+    font-weight: bold;
+}
+
+.category_tag{
+    width: 60%;
+    margin: auto;
+}
+/* New Arrival Header  */
+.new_arrival_header{
+    border-left: 4px solid pink;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding-left: 35px;
+}
+
+/* New Arrival Products  */
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    grid-row-gap: 50px;
+}
+.new_arrival_icon{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+/* .new_arrival div a img{
+    width: 100%;
+    height: 200px;
+} */
+
+.new_img{
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 180px;
+    height: 180px;
+}
+
+/* B Log  */
+/* Start B LOG Images  */
+.blog{
+    display: grid;
+    grid-template-columns: 424px 424px 424px;
+    margin-left: 100px;
+    margin-right: 70px;
+    padding-top: 40px;
+    grid-column-gap: 30px;
+}
+
+.blog_image{
+    width: 425px;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: .4s;
+}
+.blog_date{
+    color: #70bfc4;
+    padding-left: 20px ;
+    padding-right: 20px;
+}
+
+.blog_text{
+    text-align: justify;
+    padding-left: 20px ;
+    padding-right: 20px;
+    text-indent: 50px;
+}
+.read_more{
+    color: #70bfc4;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 20px ;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.blog div{
+    box-shadow: -3px 4px 10px rgb(77, 76, 76 , .2);
+
+}
+
+.blog_image:hover{
+    transform:scale(1.2);
+}
+
+.blog_image_zoom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.blog_image_zoom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* Avaliable Products  */
+.avaliable_image{
+    background-image: url(../Images/iphone13pro.png);
+    /* background-image: url(../Images/iphone13pro.png); */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.avaliable_image:hover{
+    background-image: url(../Images/iphone13.png);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-repeat:no-repeat ;
+}
+
+.avaliable_image1{
+    background-image: url(../Images/iphone13.png);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.avaliable_image1:hover{
+    background-image: url(../Images/iphone13pro.png);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-repeat:no-repeat ;
+}
+
+/* More Items */
+.more_item{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.more_item a{
+    color: #70bfc4;
+}
+
+/* Support  */
+.support div p{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(219, 225, 231);
+}
+
+.support div p b{
+    font-size: 24px;
+}
+
+/* Footer  */
+/* .footer{
+    background-color: black;
+    padding-top: 50px;
+}
+
+.footer_nav{
+    color: gray;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.designed_by{
+    color: gray;
+    margin-top: 20px;
+}
+
+.footer_icon{
+    color: gray;
+    display: inline-block;
+    margin: 20px 10px 50px;
+} */
+
+/* Start Home Page  */
+
+.hr{
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 25px;
+    color: #70bfc4;
+    border-top: 4px solid;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.iPad_series{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.iPad_p{
+    text-justify: auto;
+    margin-left: 36%;
+    margin-right: 33%;
+}
+/* Start iPad  */
+/* Start Product  */
+.iPad_img{
+    margin-top: 7px;
+    margin-left: 40%;
+    margin-right: 35%;
+    width: 300px;
+    height: 290px;
+    border-radius: 5px;
+}
+
+.more_button{
+    border: none;
+    color: white;
+}
+.cart_button{
+    border: none;
+    color: white;
+}
+
+/* .more_iPad{
+    
+    display: inline-block;
+    text-decoration: none;
+    /* padding:10px 35px 10px 35px; */
+    /* color: white;
+} */
+
+
+/* .more_button{
+    display: inline-block;
+    border-color: #70bfc4;
+    border-radius: 5px;
+    background-color: #70bfc4;
+    padding:10px 35px 10px 35px;
+    margin-top: 10px;
+} */
+
+/* .cart_button{
+    display: inline-block;
+    border-color: #70bfc4;
+    border-radius: 5px;
+    background-color: #70bfc4;
+    padding:10px 35px 10px 35px;
+} */
+
+/* .cart_iPad{
+    text-decoration: none;
+    color: white;
+} */
+/* End iPad  */
+/* End Product  */
+
+/* Start Services */
+.service_img{
+    width: 100%;
+    height: 400px;
+}
+
+.phone_1{
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    border: 2px solid #70bfc4;
+    padding: 5px 7px 5px 7px;
+    border-radius: 6px;
+    background-color: #70bfc4;
+    color: wheat;
+    width: 170px;
+}
+
+.phone_2{
+    position: absolute;
+    top: 250px;
+    left: 380px;
+    border: 2px solid #70bfc4;
+    padding: 5px 7px 5px 7px;
+    border-radius: 6px;
+    background-color: #70bfc4;
+    color: wheat;
+    width: 67px;
+}
+
+.phone_3{
+    position: absolute;
+    top: 430px;
+    left: 660px;
+    border: 2px solid #70bfc4;
+    padding: 5px 7px 5px 7px;
+    border-radius: 6px;
+    background-color: #70bfc4;
+    color: wheat;
+    width: 252px;
+}
+
+ /* Start float image  */
+.float_repair img{
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 580px;
+    height: 530px;
+    background-color: #70bfc4;
+}
+
+.float_repair{
+    border-radius: 5px;
+    margin-top: 40px;
+    display: inline-block;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+/* End Float */
+/* Start Offer  */
+.offer_header{
+    margin-top: 70px;
+    margin-left: 77px;
+    color: #70bfc4;
+    margin-bottom: 20px;
+} 
+
+.offer{
+    text-align: justify;
+    margin-left: 77px;
+    text-indent: 40px;
+}
+
+.our_services{
+    color: #70bfc4;
+}
+
+.offer_give{
+    margin-top: 70px;
+    margin-left: 77px;
+    color: #70bfc4;
+    margin-bottom: 20px;
+}
+
+.offer_give h2{
+    margin-bottom: 10px;
+}
+
+.offer_give h3{
+    margin-left: 30px;
+    margin-top: 17px;
+}
+.offer_give ol li{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+/* End Offer  */
+
+/* Start Blog  */
+
+.blogpage{
+    width: 100%;
+    height: 400px;
+    border-radius: 3px;
+}
+
+.blogpage_header{
+    color: #adbcbd;
+    position: absolute;
+    top: 190px;
+    left: 50px;
+    font-style: italic;
+}
+
+.blog_p{
+    text-indent: 30px;
+    text-align: justify;
+    position: absolute;
+    left: 50px;
+    right: 950px;
+    top: 230px;
+    font-size: large;
+    color: #efefef;
+    
+}
+
+.blogpage_span{
+    color: #adbcbd;
+    font-size: larger;
+}
+
+.blog_compare{
+    text-align: justify;
+    padding-left: 20px ;
+    padding-right: 20px;
+    color: #70bfc4;
+}
+/* End BLOG Page  */
+
+/* Start About Us  */
+.about_img{
+    width: 100%;
+    height: 450px;
+    border-radius: 3px;
+}
+.web_name{
+    margin-top: 15px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 15px;
+    color: #70bfc4;
+}
+.web_dev{
+    /* text-align: justify; */
+    text-indent: 25px;
+    margin-top: 15px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 15px;
+}
+
+.read_about{
+    font-size: large;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: #70bfc4;
+    text-decoration: none;
+}
+/* End About Us  */
+
+/* Start Contact  */
+.map{
+    margin-right: 190px;
+    float: right;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.form{
+    margin-left: 190px;
+    margin-top: 30px;
+}
+
+input[type="text"],input[type="email"],input[type="number"]{
+    width: 30%;
+    height: 35px;
+    outline: none;
+    border: 1px solid #70bfc4;
+    background-color: #70bfc4;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus{
+    border: 4px solid #70bfc4;
+    background-color: #70bfc4;
+}
+
+#address{
+    width: 30%;
+    border: 1px solid #70bfc4;
+    height: 100px;
+    outline: none;
+    background-color: #70bfc4;
+}
+
+button{
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #70bfc4;
+}
+.button{
+    margin-top: 9px;
+    border: 1px solid;
+    width: 130px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    background-color: #70bfc4;
+}
+
+/* Start Footer  */
+.footer{
+    margin-top: 0px;
+    width: 1062px;
+    height: 150px;
+    padding: 100px 15%;
+    background-color: black;
+    color: #efefef;
+    display: flex;
+    font-weight: bold;
+}
+
+.footer div{
+    text-align: center;
+    /* background-color: #6496a3; */
+}
+
+.footer_col2{
+    flex-grow: 2;
+    /* background-color: #6496a3; */
+}
+
+.footer div h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    /* background-color: #6496a3; */
+}
+
+.footer_col1 a{
+    text-decoration: none;
+    display: block;
+    /* background-color: #6496a3; */
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form {
+    /* background-color: #6496a3; */
+}
+form input{
+    width: 380px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    /* background-color: #efefef; */
+    border: none;
+}
+
+.subscribe_now{
+    width: 170px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #efefef;
+    color: #efefef;
+    border-radius: 30px;
+    padding: 3px 7px;
+    /* font-size: 15px; */
+    cursor: pointer;
+}
+
+.footer_col3 p{
+    /* background-color: #6496a3; */
+}
+
+.footer_icons{
+    margin-top: 35px;
+}
+
+
+
+
+.footer_icons a i{
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    /* margin-right: 20px; */
+} 

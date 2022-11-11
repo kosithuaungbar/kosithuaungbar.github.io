@@ -9,14 +9,16 @@
 </head>
 <body>
     <h1>Student Register Form</h1>
-    <form  class="myForm">
+    <form  name="myForm">
         Name : <input type="text" name="name" id="name"> <br>
         Age : <input type="number" name="age" > <br>
         City : <input type="text" name="city"> <br>
-        <button onclick="showData()">Add Student</button>
+        <button type="button" onclick="showData()">Add Student</button>
     </form>
+
+    <button onclick="sayHi()">Click Me</button>
     <h1>Student List</h1>
-    <table border="1" cellpadding = "">
+    <table border="1" cellpadding = "10">
         <thead>
             <tr>
                 <td>No</td>
@@ -31,15 +33,58 @@
     </table>
 
     <script>
+        let studentListArray = []
         function showData() {
-            alert("Okey")
-            // let name = document.myForm.name.value;
-            // let age = document.myForm.age.value;
-            // let city = document.myForm.city.value;
+            //alert("Okey")
+            // Get Data
+            let name = document.myForm.name.value;
+            let age = document.myForm.age.value;
+            let city = document.myForm.city.value;
+            //console.log(name,age,city);
+            
+            //let student = document.getElementById('name').innerHTML.value;
 
-            let name = document.getElementById('name').innerHTML.value;
-            console.log(name);
+            //Add to Array
+            let student = {
+                studentName:name,
+                studentAge:age,
+                studentCity:city
+            }
+
+            //console.log(student);
+            studentListArray.push(student)
+
+            //Show Data
+            //console.log(studentListArray);
+
+            // initia condi updated
+            let data = '';
+            for (let i = 0; i < studentListArray.length ; i++){
+                // console.log(studentListArray[i]);
+                let studentList = studentListArray[i];
+
+                console.log(studentList);
+                data = data + `
+                        <tr>
+                            <td> ${i + 1} </td>
+                            <td> ${studentList.studentName}</td>
+                            <td> ${studentList.studentAge}</td>
+                            <td> ${studentList.studentCity}</td>
+                        </tr>
+                        `;
+            }
+
+            document.getElementById('myData').innerHTML = data;
         }
+
+        function sayHi() {
+                let ans = confirm("Go To YouTube?")
+                if(ans) {
+                    document.location.href = "https://www.youtube.com/"
+                }else {
+                    document.location.href = "https://www.google.com/"
+                }
+            }
     </script>
 </body>
 </html>
