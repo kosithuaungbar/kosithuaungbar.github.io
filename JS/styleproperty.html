@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Style Property</h1>
+    <h2 id="myh2">CSS Style Effect With JS</h2>
+    <button onclick="effectDesign()">CSS Design</button>
+    <script>
+        function effectDesign() {
+            // alert('ok')
+            let result = document.getElementById('myh2');
+            result.style.color = 'red';
+            result.style.backgroundColor = 'green';
+            result.style.textAlign = 'center';
+            result.style.border = '10px solid yellow';
+            result.style.padding = '10px'
+        }
+    </script>
+</body>
+</html>

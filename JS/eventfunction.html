@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="big()">
+    <h1>Event Function</h1>
+    <img src="Images/google.png" alt="" width="300px" height="300px" onmouseover="big()" id="myImage" onmouseout="normal()">
+    <br>
+    <input type="text" onkeyup="change()" id="myInput">
+    <p id="result"></p>
+    <script>
+        function big() {
+            // alert('ok');
+            document.getElementById('myImage').style.width = "500px";
+            document.getElementById('myImage').style.height = "500px";
+
+        }
+
+        function normal() {
+            document.getElementById('myImage').style.width = "300px";
+            document.getElementById('myImage').style.height = "300px";
+        }
+
+        function change() {
+            //alert('ok')
+            let result = document.getElementById('myInput').value;
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+    
+</body>
+</html>

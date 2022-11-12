@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property & Method</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Property And Method</h1>
+    <h2 id="createTextNode"></h2>
+    <button onclick="createText()">Create Text Node</button>
+    <br><br>
+    <button onclick="createElementTag()">Create Element</button>
+    <br><br>
+    <p id="set_attribute">This is Set Attribute</p>
+    <button onclick="set_attribute()">Create Element</button>
+
+    <script>
+        function createText(){
+            // alert('ok')
+            let createTextNodeValue = document.createTextNode("This is Text Node!");
+            // console.log(createTextNodeValue); 
+            let createTextNodeSelector = document.getElementById('createTextNode');
+            createTextNodeSelector.appendChild(createTextNodeValue);
+        }
+
+        function createElementTag() {
+            // alert("ok")
+            let h3 = document.createElement('h3');
+            // console.log(h3);
+            h3.innerHTML = 'This is Create Element';
+            document.body.appendChild(h3);
+
+        }
+        function set_attribute() {
+            // alert("ok")
+            let setAttributeSelector = document.querySelector('#set_attribute');
+            // console.log(setAttributeSelector);
+
+        }
+
+        // LEFT A LOT 
+
+
+    </script>
+</body>
+</html>

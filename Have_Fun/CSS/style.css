@@ -54,6 +54,9 @@
 
 .nav_item:hover{
     color: pink;
+    letter-spacing: 3px;
+    font-size: 17px;
+    transition-duration: .3s;
 }
 
 /* NOTIFICATIONS SHOPPING  */
